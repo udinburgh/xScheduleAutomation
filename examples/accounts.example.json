@@ -1,0 +1,22 @@
+{
+  "main": {
+    "auth_token": "paste_main_account_auth_token_here",
+    "ct0": "paste_main_account_ct0_here",
+    "label": "Main Account"
+  },
+  "alt1": {
+    "auth_token": "paste_alt1_auth_token_here",
+    "ct0": "paste_alt1_ct0_here",
+    "label": "Alt Account 1"
+  },
+  "alt2": {
+    "auth_token": "paste_alt2_auth_token_here",
+    "ct0": "paste_alt2_ct0_here",
+    "label": "Alt Account 2"
+  },
+  "alt3": {
+    "auth_token": "paste_alt3_auth_token_here",
+    "ct0": "paste_alt3_ct0_here",
+    "label": "Alt Account 3"
+  }
+}

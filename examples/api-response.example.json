@@ -1,0 +1,37 @@
+{
+  "description": "Example API response format that SHEET_API_URL should return",
+  "format": "Must be a JSON array of objects",
+  "required_fields": {
+    "content": "string - the tweet text (max 280 characters)",
+    "date": "string - date in YYYY-MM-DD format",
+    "time": "string - time in HH:mm format (24-hour)"
+  },
+  "example_response": [
+    {
+      "content": "Hello world! This is my first scheduled tweet via automation. 🚀",
+      "date": "2026-05-20",
+      "time": "09:30"
+    },
+    {
+      "content": "Testing tweet #2 - scheduled for afternoon. Let's see how this works!",
+      "date": "2026-05-20",
+      "time": "14:45"
+    },
+    {
+      "content": "Third tweet with longer content to test multi-character typing speeds and pause timings across the automation. 🙌",
+      "date": "2026-05-21",
+      "time": "11:00"
+    },
+    {
+      "content": "Excited to announce that our new feature is live! Head over to x.com to check it out.",
+      "date": "2026-05-21",
+      "time": "16:30"
+    }
+  ],
+  "notes": [
+    "content: Keep under 280 characters for X compatibility",
+    "date: Must be YYYY-MM-DD format (e.g., 2026-05-20 for May 20, 2026)",
+    "time: Must be HH:mm in 24-hour format (14:30 for 2:30 PM, 09:00 for 9 AM)",
+    "The scheduler will convert times to 12-hour AM/PM format for X's UI"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "x-tweet-scheduler",
+  "version": "1.0.0",
+  "description": "Schedule tweets on X (Twitter) from a Google Sheet — multi-account, image support, no API needed",
+  "main": "schedule-tweets.js",
+  "scripts": {
+    "start": "node schedule-tweets.js",
+    "dev": "HEADLESS=false node schedule-tweets.js",
+    "setup": "node setup-wizard.js",
+    "dashboard": "node dashboard.js",
+    "mock-api": "node test-mock-api.js"
+  },
+  "keywords": [
+    "twitter",
+    "x",
+    "tweet-scheduler",
+    "automation",
+    "playwright",
+    "google-sheets",
+    "multi-account"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "node-fetch": "^2.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
