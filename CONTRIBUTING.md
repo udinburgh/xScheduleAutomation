@@ -1,57 +1,57 @@
 # 🤝 Contributing to x-tweet-scheduler
 
-Terima kasih sudah tertarik untuk berkontribusi! Panduan ini menjelaskan cara terbaik untuk ikut berkembangkan project ini.
+Thank you for your interest in contributing! This guide explains how to best contribute to this project.
 
 ---
 
-## 📋 Daftar Isi
+## 📋 Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
-- [Cara Melaporkan Bug](#cara-melaporkan-bug)
-- [Cara Mengusulkan Fitur](#cara-mengusulkan-fitur)
-- [Setup Lokal](#setup-lokal)
-- [Alur Kontribusi](#alur-kontribusi)
-- [Konvensi Branch](#konvensi-branch)
-- [Konvensi Commit](#konvensi-commit)
-- [Proses Pull Request](#proses-pull-request)
-- [Jenis Kontribusi yang Diterima](#jenis-kontribusi-yang-diterima)
+- [Reporting Bugs](#reporting-bugs)
+- [Proposing Features](#proposing-features)
+- [Local Setup](#local-setup)
+- [Contribution Workflow](#contribution-workflow)
+- [Branch Naming](#branch-naming)
+- [Commit Conventions](#commit-conventions)
+- [Pull Request Process](#pull-request-process)
+- [Types of Contributions](#types-of-contributions)
 
 ---
 
 ## Code of Conduct
 
-Project ini mengikuti [Code of Conduct](CODE_OF_CONDUCT.md). Dengan berkontribusi, kamu setuju untuk mematuhinya.
+This project follows a [Code of Conduct](CODE_OF_CONDUCT.md). By contributing, you agree to abide by its terms.
 
 ---
 
-## Cara Melaporkan Bug
+## Reporting Bugs
 
-Sebelum membuka issue baru, **cek dulu** apakah bug yang sama sudah pernah dilaporkan di [Issues](https://github.com/udinburgh/xScheduleAutomation/issues).
+Before opening a new issue, **check first** whether the same bug has already been reported in [Issues](https://github.com/udinburgh/xScheduleAutomation/issues).
 
-Kalau belum ada, buka issue baru dengan menyertakan:
+If not, open a new issue and include:
 
-- **Deskripsi singkat** — apa yang terjadi vs apa yang diharapkan
-- **Langkah untuk mereproduksi** — step by step
-- **Pesan error** — copy-paste dari terminal
-- **Screenshot** — kalau ada (terutama untuk UI/browser issues)
-- **Environment** — OS, versi Node.js, versi npm
+- **Short description** — what happened vs. what was expected
+- **Steps to reproduce** — step by step
+- **Error message** — copy-paste from terminal
+- **Screenshot** — if available (especially for UI/browser issues)
+- **Environment** — OS, Node.js version, npm version
 
-> ⚠️ **Jangan sertakan `auth_token`, `ct0`, atau data sensitif lainnya di issue.**
-
----
-
-## Cara Mengusulkan Fitur
-
-1. Buka [Issue baru](https://github.com/udinburgh/xScheduleAutomation/issues/new) dengan label `enhancement`
-2. Jelaskan **masalah apa** yang ingin diselesaikan
-3. Jelaskan **solusi yang kamu bayangkan**
-4. Tunggu diskusi dan persetujuan dari maintainer sebelum mulai coding
-
-> Ini penting agar kamu tidak buang waktu mengerjakan sesuatu yang tidak bisa di-merge.
+> ⚠️ **Do not include `auth_token`, `ct0`, or any other sensitive data in issues.**
 
 ---
 
-## Setup Lokal
+## Proposing Features
+
+1. Open a [new Issue](https://github.com/udinburgh/xScheduleAutomation/issues/new) with the `enhancement` label
+2. Describe **what problem** you want to solve
+3. Describe **your proposed solution**
+4. Wait for discussion and approval from the maintainer before writing any code
+
+> This is important so you don't waste time building something that won't be merged.
+
+---
+
+## Local Setup
 
 ### Prerequisites
 
@@ -59,76 +59,76 @@ Kalau belum ada, buka issue baru dengan menyertakan:
 - npm
 - Git
 
-### Langkah-langkah
+### Steps
 
 ```bash
-# 1. Fork repo ini di GitHub, lalu clone fork kamu
-git clone https://github.com/<username-kamu>/xScheduleAutomation.git
+# 1. Fork this repo on GitHub, then clone your fork
+git clone https://github.com/<your-username>/xScheduleAutomation.git
 cd xScheduleAutomation
 
 # 2. Install dependencies
 npm install
 npx playwright install chromium
 
-# 3. Salin file config
+# 3. Copy the config file
 cp .env.example .env.local
 
-# 4. Edit .env.local — isi SHEET_API_URL dengan URL Apps Script kamu
-#    (lihat README.md untuk panduan lengkap)
+# 4. Edit .env.local — set SHEET_API_URL to your Apps Script URL
+#    (see README.md for full setup guide)
 
-# 5. Jalankan dengan browser visible (lebih mudah untuk debug)
+# 5. Run with visible browser (easier for debugging)
 npm run dev
 ```
 
-### Tes dengan Mock API
+### Testing with Mock API
 
-Kalau belum punya Google Sheet, gunakan mock API bawaan:
+If you don't have a Google Sheet yet, use the built-in mock API:
 
 ```bash
-# Terminal 1 — jalankan mock server
+# Terminal 1 — start the mock server
 npm run mock-api
 
-# Terminal 2 — jalankan scheduler (baca dari mock)
+# Terminal 2 — run the scheduler (reads from mock)
 SHEET_API_URL=http://localhost:3000/tweets npm run dev
 ```
 
 ---
 
-## Alur Kontribusi
+## Contribution Workflow
 
 ```
-1. Fork repo ini
+1. Fork this repo
        ↓
-2. Buat branch baru dari `dev`
+2. Create a new branch from `dev`
        ↓
-3. Buat perubahan
+3. Make your changes
        ↓
-4. Test perubahan kamu
+4. Test your changes
        ↓
-5. Commit dengan pesan yang jelas
+5. Commit with a clear message
        ↓
-6. Push ke fork kamu
+6. Push to your fork
        ↓
-7. Buka Pull Request ke branch `dev`
+7. Open a Pull Request targeting `dev`
        ↓
-8. Tunggu review
+8. Wait for review
 ```
 
 ---
 
-## Konvensi Branch
+## Branch Naming
 
-Format: `<type>/<deskripsi-singkat>`
+Format: `<type>/<short-description>`
 
-| Type | Kapan dipakai |
+| Type | When to use |
 |---|---|
-| `feat/` | Fitur baru |
-| `fix/` | Perbaikan bug |
-| `docs/` | Perubahan dokumentasi saja |
-| `refactor/` | Refactor kode tanpa mengubah behavior |
-| `chore/` | Maintenance (update deps, config, dll) |
+| `feat/` | New feature |
+| `fix/` | Bug fix |
+| `docs/` | Documentation changes only |
+| `refactor/` | Code refactor without behavior change |
+| `chore/` | Maintenance (dependency updates, config, etc.) |
 
-Contoh:
+Examples:
 ```
 feat/support-thread-tweets
 fix/emote-not-showing
@@ -138,9 +138,9 @@ refactor/extract-typing-helper
 
 ---
 
-## Konvensi Commit
+## Commit Conventions
 
-Format: `<type>: <deskripsi singkat>`
+Format: `<type>: <short description>`
 
 ```
 feat: add support for thread tweets
@@ -150,47 +150,46 @@ refactor: extract humanType into helper function
 chore: update playwright to v1.45
 ```
 
-- Gunakan **bahasa Inggris**
-- Gunakan **present tense** ("add" bukan "added")
-- Maksimal **72 karakter** untuk baris pertama
-- Tambahkan detail di baris berikutnya kalau perlu
+- Use **present tense** ("add" not "added")
+- Keep the first line under **72 characters**
+- Add details in subsequent lines if needed
 
 ---
 
-## Proses Pull Request
+## Pull Request Process
 
-1. **Target branch**: selalu ke `dev`, bukan `main`
-2. **Judul PR**: ikuti format yang sama dengan commit
-3. **Deskripsi PR** harus mencakup:
-   - Apa yang berubah
-   - Kenapa perubahan ini diperlukan
-   - Cara test / verifikasi
-   - Link ke issue yang relevan (misal: `Closes #12`)
-4. **Screenshot** wajib kalau ada perubahan pada behavior browser/Playwright
-5. Pastikan tidak ada **data sensitif** (token, cookie) yang ikut ter-commit
+1. **Target branch**: always target `dev`, not `main`
+2. **PR title**: follow the same format as commit messages
+3. **PR description** should include:
+   - What changed
+   - Why the change is needed
+   - How to test / verify
+   - Link to related issue (e.g. `Closes #12`)
+4. **Screenshots** are required for any changes to browser/Playwright behavior
+5. Make sure no **sensitive data** (tokens, cookies) is included in the commit
 
-### Checklist sebelum buka PR
+### Checklist before opening a PR
 
-- [ ] Kode berjalan tanpa error di lokal
-- [ ] Sudah test secara manual (minimal dengan `npm run mock-api`)
-- [ ] Tidak ada file `.env.local` atau `accounts.json` yang ter-commit
-- [ ] Deskripsi PR sudah diisi dengan jelas
-
----
-
-## Jenis Kontribusi yang Diterima
-
-Tidak harus koding! Ini beberapa cara lain untuk berkontribusi:
-
-- 🐛 **Laporkan bug** yang kamu temukan
-- 📖 **Perbaiki dokumentasi** yang kurang jelas
-- 💡 **Usulkan fitur** baru via issue
-- 🌍 **Terjemahkan** README ke bahasa lain
-- ✅ **Review PR** dari kontributor lain
-- 🧪 **Test** di OS / environment yang berbeda dan laporkan hasilnya
+- [ ] Code runs without errors locally
+- [ ] Manually tested (at minimum with `npm run mock-api`)
+- [ ] No `.env.local` or `accounts.json` files committed
+- [ ] PR description is filled out clearly
 
 ---
 
-## Ada Pertanyaan?
+## Types of Contributions
 
-Buka [Discussion](https://github.com/udinburgh/xScheduleAutomation/discussions) atau mention di issue yang relevan.
+You don't have to write code! Here are other ways to contribute:
+
+- 🐛 **Report bugs** you find
+- 📖 **Improve documentation** that's unclear
+- 💡 **Suggest new features** via issues
+- 🌍 **Translate** the README to other languages
+- ✅ **Review PRs** from other contributors
+- 🧪 **Test** on different OS / environments and report results
+
+---
+
+## Questions?
+
+Open a [Discussion](https://github.com/udinburgh/xScheduleAutomation/discussions) or comment on the relevant issue.
