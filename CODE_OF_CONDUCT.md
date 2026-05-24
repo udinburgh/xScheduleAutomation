@@ -1,53 +1,53 @@
 # 📜 Code of Conduct
 
-## Komitmen Kami
+## Our Pledge
 
-Demi menciptakan lingkungan yang terbuka dan ramah, kami sebagai kontributor dan maintainer berkomitmen untuk membuat partisipasi dalam project ini bebas dari pelecehan bagi semua orang — tanpa memandang usia, ukuran tubuh, disabilitas, etnis, identitas gender, tingkat pengalaman, kebangsaan, penampilan, ras, agama, atau orientasi seksual.
-
----
-
-## Standar Perilaku
-
-Contoh perilaku yang membangun lingkungan yang positif:
-
-- ✅ Menggunakan bahasa yang ramah dan inklusif
-- ✅ Menghormati sudut pandang dan pengalaman yang berbeda
-- ✅ Menerima kritik yang membangun dengan lapang dada
-- ✅ Fokus pada apa yang terbaik untuk komunitas
-- ✅ Menunjukkan empati kepada sesama anggota komunitas
-
-Contoh perilaku yang **tidak** dapat diterima:
-
-- ❌ Penggunaan bahasa atau gambar seksual, serta perhatian seksual yang tidak diinginkan
-- ❌ Trolling, komentar menghina/merendahkan, dan serangan personal atau politik
-- ❌ Pelecehan publik maupun privat
-- ❌ Mempublikasikan informasi pribadi orang lain tanpa izin eksplisit
-- ❌ Perilaku lain yang secara wajar dapat dianggap tidak pantas dalam lingkungan profesional
+In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to make participation in this project a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
 ---
 
-## Tanggung Jawab Maintainer
+## Our Standards
 
-Maintainer project bertanggung jawab untuk mengklarifikasi standar perilaku yang dapat diterima dan diharapkan mengambil tindakan korektif yang tepat dan adil sebagai respons terhadap setiap perilaku yang tidak dapat diterima.
+Examples of behavior that contributes to a positive environment:
 
-Maintainer project berhak dan bertanggung jawab untuk menghapus, mengedit, atau menolak komentar, commit, kode, wiki edits, issue, dan kontribusi lain yang tidak selaras dengan Code of Conduct ini, atau untuk melarang sementara atau permanen kontributor atas perilaku lain yang dianggap tidak pantas, mengancam, menyinggung, atau berbahaya.
+- ✅ Using welcoming and inclusive language
+- ✅ Respecting differing viewpoints and experiences
+- ✅ Gracefully accepting constructive criticism
+- ✅ Focusing on what is best for the community
+- ✅ Showing empathy towards other community members
 
----
+Examples of behavior that is **not** acceptable:
 
-## Ruang Lingkup
-
-Code of Conduct ini berlaku di dalam ruang project maupun di ruang publik ketika seseorang mewakili project atau komunitasnya. Contoh representasi project atau komunitas termasuk menggunakan alamat email resmi project, posting melalui akun media sosial resmi, atau bertindak sebagai perwakilan yang ditunjuk di acara online maupun offline.
-
----
-
-## Penegakan
-
-Insiden pelecehan, pengganggu, atau perilaku yang tidak dapat diterima dapat dilaporkan dengan menghubungi maintainer project di **hafizhuddinhanif@gmail.com**. Semua keluhan akan ditinjau dan diselidiki serta akan menghasilkan respons yang dianggap perlu dan sesuai dengan situasi. Tim project wajib menjaga kerahasiaan pelapor. Detail lebih lanjut tentang kebijakan penegakan tertentu dapat diposting secara terpisah.
-
-Maintainer project yang tidak mengikuti atau menegakkan Code of Conduct dengan itikad baik dapat menghadapi dampak sementara atau permanen sebagaimana ditentukan oleh pemimpin project lainnya.
+- ❌ Use of sexualized language or imagery, or unwelcome sexual attention or advances
+- ❌ Trolling, insulting/derogatory comments, and personal or political attacks
+- ❌ Public or private harassment
+- ❌ Publishing others' private information without explicit permission
+- ❌ Other conduct which could reasonably be considered inappropriate in a professional setting
 
 ---
 
-## Atribusi
+## Maintainer Responsibilities
 
-Code of Conduct ini diadaptasi dari [Contributor Covenant](https://www.contributor-covenant.org), versi 1.4.
+Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+
+Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
+
+---
+
+## Scope
+
+This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing the project include using an official project email address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
+
+---
+
+## Enforcement
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by opening a [GitHub Issue](https://github.com/udinburgh/xScheduleAutomation/issues) or contacting the maintainer directly via GitHub. All complaints will be reviewed and investigated and will result in a response deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter. Further details of enforcement policies may be posted separately.
+
+Maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other project leadership.
+
+---
+
+## Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 1.4.
