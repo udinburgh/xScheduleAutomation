@@ -92,26 +92,15 @@ async function humanType(locator, text) {
   const [bMin, bMax] = CONFIG.delays.beforeTyping;
   await sleep(rand(bMin, bMax));
 
-  const [cMin, cMax] = CONFIG.delays.perCharacter;
-  for (let i = 0; i < text.length; i++) {
-    await locator.page().keyboard.type(text[i]);
+  const page = locator.page();
+  const isMac = process.platform === "darwin";
 
-    // Slight extra pause after punctuation (humans pause longer here)
-    const ch = text[i];
-    let delay = rand(cMin, cMax);
-    if (/[.!?,;:]/.test(ch)) delay += rand(80, 220);
-    if (ch === " ") delay += rand(10, 40);
-    await sleep(delay);
+  // Use clipboard paste to avoid breaking multi-byte characters (e.g. emoji)
+  await page.evaluate((content) => {
+    navigator.clipboard.writeText(content);
+  }, text);
 
-    // Occasional "thinking while typing" pause (mid-sentence only)
-    if (
-      i > 5 &&
-      i < text.length - 5 &&
-      Math.random() < CONFIG.probabilities.midTyping
-    ) {
-      await sleep(rand(150, 300));
-    }
-  }
+  await page.keyboard.press(isMac ? "Meta+V" : "Control+V");
 }
 
 // ----------------------------------------------------------------------------
